@@ -42,9 +42,15 @@ CREATE DATABASE Buecherverleih;
 USE Buecherverleih;
 
 
+
+-- Create the "buch" table
 CREATE TABLE buch (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    titel VARCHAR(100) NOT NULL
+    titel VARCHAR(100) NOT NULL,
+    autor VARCHAR(200) NOT NULL,
+    genre VARCHAR(50),
+    erscheinungsjahr INT,
+    isbn VARCHAR(13) UNIQUE
 );
 
 
@@ -63,6 +69,18 @@ CREATE TABLE ausleihe (
     FOREIGN KEY (buch_id) REFERENCES buch(id),
     FOREIGN KEY (kundennummer) REFERENCES kunde(nummer)
 );
+
+CREATE TABLE verlag (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(200) NOT NULL,
+    sitz VARCHAR(100),
+    gruendungsjahr INT
+);
+
+-- Add a foreign key relationship between "buch" and "verlag"
+ALTER TABLE buch
+ADD COLUMN verlag_id INT,
+ADD FOREIGN KEY (verlag_id) REFERENCES verlag(id);
 
 
 
