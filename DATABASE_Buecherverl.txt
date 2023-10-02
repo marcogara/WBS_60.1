@@ -64,8 +64,8 @@ CREATE TABLE kunde (
 
 CREATE TABLE ausleihe (
     ausleihe_id INT PRIMARY KEY AUTO_INCREMENT,
-    buch_id INT,
-    kundennummer CHAR(10),
+    buch_id INT NOT NULL,
+    kundennummer CHAR(10) NOT NULL,
     FOREIGN KEY (buch_id) REFERENCES buch(id),
     FOREIGN KEY (kundennummer) REFERENCES kunde(nummer)
 );
