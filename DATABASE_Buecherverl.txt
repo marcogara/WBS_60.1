@@ -84,6 +84,13 @@ ADD FOREIGN KEY (verlag_id) REFERENCES verlag(id);
 
 
 
+ideas and tools to make your DB unique :) 
+
+https://www.edrawsoft.com/de/article/er-diagrams-for-library-management-system.html
+
+https://trello.com/b/hmjU2QtY/quick-database-diagrams-product-roadmap
+
+
 
 
 
