@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS Buecherverleih;
 
 CREATE DATABASE Buecherverleih;
 
-USE Bücherverleih;
+USE Buecherverleih;
 
 CREATE TABLE buch (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -89,6 +89,52 @@ ideas and tools to make your DB unique :)
 https://www.edrawsoft.com/de/article/er-diagrams-for-library-management-system.html
 
 https://trello.com/b/hmjU2QtY/quick-database-diagrams-product-roadmap
+
+
+
+
+postgreSQL Syntax 
+
+
+
+
+CREATE TABLE buch (
+    id SERIAL PRIMARY KEY,
+    titel VARCHAR(100) NOT NULL,
+    autor VARCHAR(200) NOT NULL,
+    genre VARCHAR(50),
+    erscheinungsjahr INT,
+    isbn VARCHAR(13) UNIQUE
+);
+
+CREATE TABLE kunde (
+    nummer SERIAL PRIMARY KEY,
+    name VARCHAR(200) NOT NULL,
+    vorname VARCHAR(200) NOT NULL,
+    guthaben DOUBLE PRECISION NOT NULL
+);
+
+
+
+CREATE TABLE ausleihe (
+    ausleihe_id SERIAL PRIMARY KEY,
+    buch_id SERIAL NOT NULL,
+    kundennummer SERIAL NOT NULL,
+    FOREIGN KEY (buch_id) REFERENCES buch(id),
+    FOREIGN KEY (kundennummer) REFERENCES kunde(nummer)
+);
+
+
+
+CREATE TABLE verlag (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(200) NOT NULL,
+    sitz VARCHAR(100),
+    gruendungsjahr INTEGER
+);
+
+
+
 
 
 
