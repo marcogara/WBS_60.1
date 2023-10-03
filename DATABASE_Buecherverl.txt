@@ -97,6 +97,16 @@ postgreSQL Syntax
 
 
 
+DROP DATABASE IF EXISTS Buecherverleih;
+
+
+CREATE DATABASE Buecherverleih;
+
+
+USE Buecherverleih;
+
+
+
 
 CREATE TABLE buch (
     id SERIAL PRIMARY KEY,
@@ -104,7 +114,11 @@ CREATE TABLE buch (
     autor VARCHAR(200) NOT NULL,
     genre VARCHAR(50),
     erscheinungsjahr INT,
-    isbn VARCHAR(13) UNIQUE
+	verlag_id SERIAL NOT NULL,
+    isbn VARCHAR(13) UNIQUE,
+	FOREIGN KEY (verlag_id) REFERENCES verlag(id)
+	
+
 );
 
 CREATE TABLE kunde (
