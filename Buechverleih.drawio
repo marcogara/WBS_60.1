@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2023-10-04T11:22:05.020Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0" etag="aM0h-5DwlThkQ3esbICu" version="22.0.0" type="device">
+<mxfile host="app.diagrams.net" modified="2023-10-04T12:09:02.202Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0" etag="Dp9rwGTlgWT_KlLIcbmp" version="22.0.0" type="device">
   <diagram name="Seite-1" id="uxTLcfkTgohi3he8zT08">
-    <mxGraphModel dx="1802" dy="1046" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1513" dy="740" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-61" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="50" width="490" height="150" as="geometry" />
+        </mxCell>
         <mxCell id="-Hhe_IaTKdPIlDTNNeOO-51" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-180" y="80" width="940" height="750" as="geometry" />
         </mxCell>
@@ -122,6 +125,51 @@
             <mxPoint x="90" y="410" as="sourcePoint" />
             <mxPoint x="140" y="360" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-52" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.user;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="60" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-53" value="&lt;div&gt;User Story 0&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1258" y="60" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-58" value="&lt;div align=&quot;left&quot;&gt;&lt;b&gt;Persona: &lt;/b&gt;Kunde&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;b&gt;Bedürfnis: &lt;/b&gt;Das Ziel, welches die Softwarefunktion für den Endnutzer erreichen soll&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Zweck: &lt;/b&gt;Das Ziel, das der Endnutzer mit der Anwendung der Softwarefunktion verfolgt&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1184" y="110" width="470" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-62" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="255" width="490" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-63" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.user;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="265" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-64" value="&lt;div&gt;User Story 1&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1258" y="265" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-65" value="&lt;div align=&quot;left&quot;&gt;&lt;b&gt;Persona: &lt;/b&gt;Kunde&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;b&gt;Bedürfnis: &lt;/b&gt;Das Ziel, welches die Softwarefunktion für den Endnutzer erreichen soll&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Zweck: &lt;/b&gt;Das Ziel, das der Endnutzer mit der Anwendung der Softwarefunktion verfolgt&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1184" y="315" width="470" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-66" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="430" width="490" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-67" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.user;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="440" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-68" value="&lt;div&gt;User Story 2&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1258" y="440" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-69" value="&lt;div align=&quot;left&quot;&gt;&lt;b&gt;Persona: &lt;/b&gt;Kunde&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;b&gt;Bedürfnis: &lt;/b&gt;Das Ziel, welches die Softwarefunktion für den Endnutzer erreichen soll&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Zweck: &lt;/b&gt;Das Ziel, das der Endnutzer mit der Anwendung der Softwarefunktion verfolgt&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1184" y="490" width="470" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-70" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1174" y="630" width="490" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-71" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.user;" vertex="1" parent="1">
+          <mxGeometry x="1244" y="640" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-72" value="&lt;div&gt;User Story 3&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1263" y="640" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-73" value="&lt;div align=&quot;left&quot;&gt;&lt;b&gt;Persona: &lt;/b&gt;Kunde&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;b&gt;Bedürfnis: &lt;/b&gt;Das Ziel, welches die Softwarefunktion für den Endnutzer erreichen soll&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Zweck: &lt;/b&gt;Das Ziel, das der Endnutzer mit der Anwendung der Softwarefunktion verfolgt&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1188" y="690" width="470" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
