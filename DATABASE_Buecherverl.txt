@@ -106,6 +106,12 @@ CREATE DATABASE Buecherverleih;
 USE Buecherverleih;
 
 
+CREATE TABLE verlag (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(200) NOT NULL,
+    sitz VARCHAR(100),
+    gruendungsjahr INTEGER
+);
 
 
 CREATE TABLE buch (
@@ -125,7 +131,7 @@ CREATE TABLE kunde (
     nummer SERIAL PRIMARY KEY,
     name VARCHAR(200) NOT NULL,
     vorname VARCHAR(200) NOT NULL,
-    guthaben DOUBLE PRECISION NOT NULL
+    guthaben INTEGER NOT NULL
 );
 
 
@@ -140,12 +146,7 @@ CREATE TABLE ausleihe (
 
 
 
-CREATE TABLE verlag (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(200) NOT NULL,
-    sitz VARCHAR(100),
-    gruendungsjahr INTEGER
-);
+
 
 
 
