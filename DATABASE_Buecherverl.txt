@@ -147,6 +147,39 @@ CREATE TABLE ausleihe (
 
 
 
+-- Insert data into the "verlag" table (publisher information)
+INSERT INTO verlag (name, sitz, gruendungsjahr)
+VALUES
+    ('Publisher A', 'Location A', 2000),
+    ('Publisher B', 'Location B', 1995),
+    ('Publisher C', 'Location C', 2010);
+
+inserted 
+
+
+
+-- Insert data into the "verlag" table (publisher information)
+INSERT INTO verlag (name, sitz, gruendungsjahr)
+VALUES
+    ('Publisher A', 'Location A', 2000),
+    ('Publisher B', 'Location B', 1995),
+    ('Publisher C', 'Location C', 2010);
+
+-- Insert data into the "buch" table (book information)
+INSERT INTO buch (titel, autor, genre, erscheinungsjahr, verlag_id, isbn)
+VALUES
+    ('Atomic Habits', 'Dr. Carol S. Dweck', 'Self-Help', 2020, 1, '9781234567890'),
+    ('Mindset', 'Holly Stephen King', 'Psychology', 2015, 2, '9789876543210'),
+    ('Control your Mind', 'Eric Robertson', 'Self-Help', 2019, 3, '9785555555555'),
+    ('Das Mindset', 'Flamur Berischa', 'Psychology', 2021, 1, '9784444444444'),
+    ('Surrounded by idiots', 'Thomas Erikson', 'Psychology', 2014, 2, '9783333333333'),
+    ('The Power of Now', 'Eckhart Tolle', 'Spirituality', 1997, 3, '9782222222222'),
+    ('The Catcher in the Rye', 'J.D. Salinger', 'Fiction', 1951, 1, '9781111111111'),
+    ('To Kill a Mockingbird', 'Harper Lee', 'Fiction', 1960, 2, '9789999999999'),
+    ('The Great Gatsby', 'F. Scott Fitzgerald', 'Fiction', 1925, 3, '9788888888888');
+
+
+
 
 
 
