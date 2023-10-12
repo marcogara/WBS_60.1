@@ -165,6 +165,11 @@ VALUES
     ('Publisher B', 'Location B', 1995),
     ('Publisher C', 'Location C', 2010);
 
+
+
+
+
+
 -- Insert data into the "buch" table (book information)
 INSERT INTO buch (titel, autor, genre, erscheinungsjahr, verlag_id, isbn)
 VALUES
@@ -177,6 +182,166 @@ VALUES
     ('The Catcher in the Rye', 'J.D. Salinger', 'Fiction', 1951, 1, '9781111111111'),
     ('To Kill a Mockingbird', 'Harper Lee', 'Fiction', 1960, 2, '9789999999999'),
     ('The Great Gatsby', 'F. Scott Fitzgerald', 'Fiction', 1925, 3, '9788888888888');
+
+
+
+
+UPDATE verlag
+SET
+    name = CASE
+        WHEN name = 'Abenteuer Medien Verlag' THEN 'Updated Publisher 1'
+        WHEN name = 'ACABUS Verlag' THEN 'Updated Publisher 2'
+        WHEN name = 'Academia Verlag' THEN 'Updated Publisher 3'
+    END,
+    sitz = CASE
+        WHEN name = 'Abenteuer Medien Verlag' THEN 'Updated Location 1'
+        WHEN name = 'ACABUS Verlag' THEN 'Updated Location 2'
+        WHEN name = 'Academia Verlag' THEN 'Updated Location 3'
+    END,
+    gruendungsjahr = CASE
+        WHEN name = 'Abenteuer Medien Verlag' THEN 2020
+        WHEN name = 'ACABUS Verlag' THEN 2022
+        WHEN name = 'Academia Verlag' THEN 2023
+    END
+WHERE name IN ('Abenteuer Medien Verlag', 'ACABUS Verlag', 'Academia Verlag');
+
+
+
+- Insert the remaining publishers
+INSERT INTO verlag (name, sitz, gruendungsjahr)
+VALUES
+    ('Achterbahn', 'Kiel', 1991),
+    ('Adrian Dinser Verlag', 'Offenburg', 2020),
+    ('AIM-Verlagshaus', 'Frankfurt am Main', 2002),
+    ('Aisthesis Verlag', 'Bielefeld', 1985),
+    ('Akademische Arbeitsgemeinschaft Verlag', 'Mannheim', 1973),
+    ('Akademische Verlagsgesellschaft', 'Leipzig', 1906),
+    ('Verlag Karl Alber', 'Baden-Baden', 1910),
+    ('Alexander Verlag', 'Berlin', 1983),
+    ('Alibri Verlag', 'Aschaffenburg', 1994),
+    ('Alpinger Verlag', 'Dresden', 2021),
+    ('ALTOP Verlag', 'München', 1984),
+    ('Altraverse', 'Hamburg', 2017),
+    ('Amrûn Verlag', 'Traunstein', 2013),
+    ('Schulbuchverlag Anadolu', 'Hückelhoven', 1977),
+    ('Anabas-Verlag', 'Frankfurt am Main', 1966),
+    ('Andere Zeiten', 'Hamburg', 1998),
+    ('Anno Verlag', 'Ahlen', 2010),
+    ('Verlag Antaios', 'Schnellroda', 2000),
+    ('Apprimus Wissenschaftsverlag', 'Aachen', 2008),
+    ('Arbeitsgemeinschaft für zeitgemäßes Bauen e. V.', 'Kiel', 1946),
+    ('Argon Verlag', 'Berlin', 1952),
+    ('Argument Verlag', 'Hamburg', 1959),
+    ('Arndt-Verlag e.K.', 'Bretten', 1988),
+    ('Arovell Verlag', 'Gosau', 1991),
+    ('ArsEdition', 'München', 1896),
+    ('Das Arsenal', 'Berlin', 1977),
+    ('Aschendorff Verlag', 'Münster', 1720),
+    ('aLiVe, Assoziation Linker Verlage', 'Aschaffenburg', 1994),
+    ('ATHENA-Verlag', 'Oberhausen', 1996),
+    ('Der Audio Verlag (DAV)', 'Berlin', 1999),
+    ('Audio Verlag München (avm)', 'München', 2018),
+    ('Carl-Auer-Verlag', 'Heidelberg', 1989),
+    ('Aufbau Verlagsgruppe', 'Berlin', 1945),
+    ('Autorenhaus Verlag', 'Berlin', 1996),
+    ('Aviva Verlag', 'Berlin', 1997),
+    ('Avocado Verlag', 'Berlin', 2022),
+    ('Axel Dielmann-Verlag', 'Frankfurt am Main', 1993);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Abenteuer Medien Verlag 	Hamburg 	1993 	
+ACABUS Verlag 	Hamburg 	2008 	
+Academia Verlag 	Baden-Baden 	1988 	
+Achterbahn 	Kiel 	1991 	2003 
+Adrian Dinser Verlag 	Offenburg 	2020 		
+AIM-Verlagshaus 	Frankfurt am Main 	2002 		
+Aisthesis Verlag 	Bielefeld 	1985 		
+Akademische Arbeitsgemeinschaft Verlag 	Mannheim 	1973 	
+Akademische Verlagsgesellschaft 	Leipzig 	1906 	
+Verlag Karl Alber 	Baden-Baden 	1910 
+Alexander Verlag 	Berlin 	1983 	
+
+Alibri Verlag 	Aschaffenburg 	1994 	
+
+Alpinger Verlag 	Dresden 	2021 	
+
+ALTOP Verlag 	München 	1984 		
+Altraverse 	Hamburg 	2017 		
+Amrûn Verlag 	Traunstein 	2013 		
+Schulbuchverlag Anadolu 	Hückelhoven 	1977 		
+Anabas-Verlag 	Frankfurt am Main 	1966 		
+Andere Zeiten 	Hamburg 	1998 	
+ Ratgeber
+Anno Verlag 	Ahlen 	2010 		
+Verlag Antaios 	Schnellroda 	2000 		
+
+
+Apprimus Wissenschaftsverlag 	Aachen 	2008 		
+
+Arbeitsgemeinschaft für zeitgemäßes Bauen e. V. 	Kiel 	1946 	
+
+
+Argon Verlag 	Berlin 	1952 	
+Argument Verlag 	Hamburg 	1959 		
+Arndt-Verlag e.K. 	Bretten 	1988 		
+
+
+Arovell Verlag 	Gosau 	1991 		
+ArsEdition 	München 	1896 	
+Das Arsenal 	Berlin 	1977 		
+Aschendorff Verlag 	Münster 	1720 		
+aLiVe, Assoziation Linker Verlage 	Aschaffenburg 	1994 		
+
+ATHENA-Verlag 	Oberhausen 	1996 		
+Der Audio Verlag (DAV) 	Berlin 	1999 	
+Audio Verlag München (avm) 	München 	2018 	
+Carl-Auer-Verlag 	Heidelberg 	1989 		
+Aufbau Verlagsgruppe 	Berlin 	1945 	
+
+Autorenhaus Verlag 	Berlin 	1996 		
+Aviva Verlag 	Berlin 	1997 		
+Avocado Verlag 	Berlin 	2022 		
+Axel Dielmann-Verlag 	Frankfurt am Main 	1993 	 
+
+
+
+
+-- Update the "verlag_id" for specific records in the "buch" table
+-- Use a CASE statement to set the new "verlag_id" based on a condition (e.g., book title)
+UPDATE buch
+SET verlag_id = CASE
+    WHEN id = 1 THEN 34 
+    WHEN id = 2 THEN 15        
+    WHEN id = 3 THEN 6 
+    WHEN id = 1 THEN 31 
+    WHEN id = 2 THEN 10        
+    WHEN id = 3 THEN 20
+    WHEN id = 1 THEN 32 
+    WHEN id = 2 THEN 14        
+    WHEN id = 3 THEN 16 
+    -- Add more cases as needed
+    ELSE verlag_id  
+END
+WHERE id IN (1,2,3,4,5,6,7,8,9);
 
 
 
