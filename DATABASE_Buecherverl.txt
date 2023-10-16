@@ -386,8 +386,19 @@ VALUES
     ('Der Spieler', 'Fjodor Dostojewski', 'Novel', 1866, 33, '9783030303032');
 
 
-ALTER TABLE ausleihe
-ADD COLUMN datum DATE;
+
+DROP TABLE ausleihe;
+
+
+CREATE TABLE ausleihe (
+    ausleihe_id SERIAL PRIMARY KEY,
+    buch_id INT NOT NULL,
+    kunde_nummer INT NOT NULL,
+    datum DATE,
+    FOREIGN KEY (buch_id) REFERENCES buch(id),
+    FOREIGN KEY (kunde_nummer) REFERENCES kunde(nummer)
+);
+
 
 
 
