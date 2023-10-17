@@ -1,175 +1,184 @@
-<mxfile host="app.diagrams.net" modified="2023-10-05T06:19:20.688Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0" etag="Zv6DZo3WpGtywYK0Y-do" version="22.0.0" type="device">
+<mxfile host="app.diagrams.net" modified="2023-10-17T06:14:10.589Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0" etag="0py-CN3SqYZUkbG4epEM" version="22.0.0" type="device">
   <diagram name="Seite-1" id="uxTLcfkTgohi3he8zT08">
-    <mxGraphModel dx="4587" dy="3330" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1466" dy="689" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-61" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-61" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1170" y="50" width="530" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-51" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-51" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-180" y="80" width="940" height="750" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-80" y="330" as="targetPoint" />
             <mxPoint x="-210" y="200" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-1" value="&lt;div&gt;kunde&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-1" value="&lt;div&gt;kunde&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
           <mxGeometry x="-250" y="170" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-2" value="Als Kunde registrieren" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-2" value="Als Kunde registrieren" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="150" y="190" width="130" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-5" value="Kundennummer und Bestätigung bekommen" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-5" value="Kundennummer und Bestätigung bekommen" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="370" y="190" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-6" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-Hhe_IaTKdPIlDTNNeOO-2" target="-Hhe_IaTKdPIlDTNNeOO-5">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-6" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-Hhe_IaTKdPIlDTNNeOO-2" target="-Hhe_IaTKdPIlDTNNeOO-5" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="140" y="430" as="sourcePoint" />
             <mxPoint x="300" y="430" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-7" value="&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;buecherverleih GUI &lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;0.1&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-7" value="&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;buecherverleih GUI &lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;0.1&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-60" y="120" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-9" value="Bücherliste ansehen&lt;br&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-9" value="Bücherliste ansehen&lt;br&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="160" y="330" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-11" value="Buch ausleihen" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-11" value="Buch ausleihen" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="170" y="490" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-14" value="Bestätigung anzeigen" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-14" value="Bestätigung anzeigen" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="370" y="610" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-15" value="Liste wird gezeigt" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-15" value="Liste wird gezeigt" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="360" y="330" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-17" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="-Hhe_IaTKdPIlDTNNeOO-9" target="-Hhe_IaTKdPIlDTNNeOO-15">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-17" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="-Hhe_IaTKdPIlDTNNeOO-9" target="-Hhe_IaTKdPIlDTNNeOO-15" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="140" y="430" as="sourcePoint" />
             <mxPoint x="300" y="430" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-20" value="&lt;div&gt;Erster Entwurf der funktionalen Anforderungen&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Landing Page braucht eine Navigationsleiste oder ein Menü mit 3 Schaltflächen, wo der Benutzer zwischen den Funktionen wählen kann.&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- registrieren &lt;br&gt;&lt;/div&gt;&lt;div&gt;- Bücherliste &lt;br&gt;&lt;/div&gt;&lt;div&gt;- Buch ausleihen &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Um den Client zu registrieren&lt;/div&gt;benötigt die GUI ein Registrierungsformular mit 3 Textfeldern: Name, Vorname und Guthaben.&lt;br&gt;&lt;div&gt;Mit der Bestätigung erhält der Kunde auch eine Kundennummer (von der Anwendung generiert).&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Eine Schaltfläche für die Bestätigung ist erforderlich.&lt;/div&gt;&lt;div&gt;Eine Schaltfläche für die Rückkehr zur Startseite ist erforderlich.&lt;/div&gt;&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Um die Buecherliste zu zeigen benötigen ein suchenfeld mit dropdownmenu. Altertnativ ein textArea um die Liste zu zeigen. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Wenn das Buch ausgewählt ist, kann ein TextArea alle Informationen über das Buch anzeigen. (Autor,Genre,...).&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Eine Schaltfläche für die Rückkehr zur Startseite ist erforderlich.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Das Ausleihformular wäre gut, wenn das Eingabefeld für den Titel des Buches ein Dropdown-Menü hat, wo der Kunde das Buch auswählen kann.&lt;br&gt;Das Formular sollte andere Eingabefelder wie Kundennummer und Name enthalten.&lt;br&gt;&lt;div&gt;Wenn das Buch ausgewählt ist, kann ein TextArea alle Informationen über das Buch anzeigen. (Autor,Genre,...).&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Eine Schaltfläche für die Bestätigung ist erforderlich.&lt;/div&gt;&lt;div&gt;Eine Schaltfläche für die Rückkehr zur Startseite ist erforderlich.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-20" value="&lt;div&gt;Erster Entwurf der funktionalen Anforderungen&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Die Landing Page benötigt eine Navigation mit drei Schaltflächen, damit der Benutzer zwischen den verschiedenen Funktionen wählen kann.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- registrieren &lt;br&gt;&lt;/div&gt;&lt;div&gt;- Bücherliste &lt;br&gt;&lt;/div&gt;&lt;div&gt;- Buch ausleihen &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Um einen Kunden zu registrieren,&lt;br&gt;benötigt die Benutzeroberfläche ein Formular mit drei Textfeldern: Name, Vorname und Guthaben.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;div&gt;Mit der Bestätigung erhält der Kunde auch eine Kundennummer (von der Anwendung generiert).&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Eine Schaltfläche für die Bestätigung ist erforderlich.&lt;/div&gt;&lt;div&gt;Eine Schaltfläche für die Rückkehr zur Startseite ist erforderlich.&lt;/div&gt;&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Um die Buecherliste zu zeigen benötigen ein suchenfeld mit dropdownmenu. Altertnativ ein textArea um die Liste zu zeigen. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Wenn das Buch ausgewählt ist, kann ein TextArea alle Informationen über das Buch anzeigen. (Autor,Genre,...).&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Eine Schaltfläche für die Rückkehr zur Startseite ist erforderlich.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Das Ausleihformular wäre gut, wenn das Eingabefeld für den Titel des Buches ein Dropdown-Menü hat, wo der Kunde das Buch auswählen kann.&lt;br&gt;Das Formular sollte andere Eingabefelder wie Kundennummer und Name enthalten.&lt;br&gt;&lt;div&gt;Wenn das Buch ausgewählt ist, kann ein TextArea alle Informationen über das Buch anzeigen. (Autor,Genre,...).&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Eine Schaltfläche für die Bestätigung ist erforderlich.&lt;/div&gt;&lt;div&gt;Eine Schaltfläche für die Rückkehr zur Startseite ist erforderlich.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="770" y="110" width="370" height="880" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-21" value="ausleihen Form wird gezeigt" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-21" value="ausleihen Form wird gezeigt" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="380" y="490" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-22" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-Hhe_IaTKdPIlDTNNeOO-11" target="-Hhe_IaTKdPIlDTNNeOO-21">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-22" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-Hhe_IaTKdPIlDTNNeOO-11" target="-Hhe_IaTKdPIlDTNNeOO-21" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="330" y="350" as="sourcePoint" />
             <mxPoint x="490" y="350" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-24" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="-Hhe_IaTKdPIlDTNNeOO-14" target="-Hhe_IaTKdPIlDTNNeOO-11">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-24" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="-Hhe_IaTKdPIlDTNNeOO-14" target="-Hhe_IaTKdPIlDTNNeOO-11" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="330" y="350" as="sourcePoint" />
             <mxPoint x="490" y="350" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-25" value="Condition: wenn das Formblatt                 ordnungsgemäß ausgefüllt ist.&#xa;" style="shape=note;size=15;spacingLeft=5;align=left;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-25" value="Condition: wenn das Formblatt                 ordnungsgemäß ausgefüllt ist.&#xa;" style="shape=note;size=15;spacingLeft=5;align=left;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="105" y="640" width="230" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-28" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="-Hhe_IaTKdPIlDTNNeOO-25">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-28" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="-Hhe_IaTKdPIlDTNNeOO-25" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="380" y="380" as="sourcePoint" />
             <mxPoint x="330" y="590" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-29" value="Info Buch wird gezeigt" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-29" value="Info Buch wird gezeigt" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="630" y="490" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-30" value="Condition: wenn das Buch ist gewählt" style="shape=note;size=15;spacingLeft=5;align=left;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-30" value="Condition: wenn das Buch ist gewählt" style="shape=note;size=15;spacingLeft=5;align=left;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="500" y="410" width="230" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-31" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="align=right;html=1;verticalAlign=bottom;rounded=0;labelBackgroundColor=none;endArrow=open;endSize=12;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-Hhe_IaTKdPIlDTNNeOO-29" target="-Hhe_IaTKdPIlDTNNeOO-21">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-31" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="align=right;html=1;verticalAlign=bottom;rounded=0;labelBackgroundColor=none;endArrow=open;endSize=12;dashed=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-Hhe_IaTKdPIlDTNNeOO-29" target="-Hhe_IaTKdPIlDTNNeOO-21" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="480" y="490" as="targetPoint" />
             <mxPoint x="640" y="490" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-32" value="" style="edgeStyle=none;html=1;endArrow=none;rounded=0;labelBackgroundColor=none;dashed=1;exitX=0.5;exitY=1;" edge="1" source="-Hhe_IaTKdPIlDTNNeOO-30" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-32" value="" style="edgeStyle=none;html=1;endArrow=none;rounded=0;labelBackgroundColor=none;dashed=1;exitX=0.5;exitY=1;" parent="1" source="-Hhe_IaTKdPIlDTNNeOO-30" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="580" y="530" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-33" value="Startseite menu zeigen" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-33" value="Startseite menu zeigen" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-140" y="335" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-44" value="" style="rhombus;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-44" value="" style="rhombus;" parent="1" vertex="1">
           <mxGeometry x="30" y="360" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-47" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-Hhe_IaTKdPIlDTNNeOO-33" target="-Hhe_IaTKdPIlDTNNeOO-44">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-47" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-Hhe_IaTKdPIlDTNNeOO-33" target="-Hhe_IaTKdPIlDTNNeOO-44" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="30" y="390" as="sourcePoint" />
             <mxPoint x="190" y="390" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-48" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.034;entryY=0.564;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="-Hhe_IaTKdPIlDTNNeOO-44" target="-Hhe_IaTKdPIlDTNNeOO-9">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-48" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.034;entryY=0.564;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="-Hhe_IaTKdPIlDTNNeOO-44" target="-Hhe_IaTKdPIlDTNNeOO-9" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="90" y="410" as="sourcePoint" />
             <mxPoint x="140" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-49" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.573;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="-Hhe_IaTKdPIlDTNNeOO-44" target="-Hhe_IaTKdPIlDTNNeOO-2">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-49" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.573;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="-Hhe_IaTKdPIlDTNNeOO-44" target="-Hhe_IaTKdPIlDTNNeOO-2" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="90" y="410" as="sourcePoint" />
             <mxPoint x="140" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-50" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.444;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="-Hhe_IaTKdPIlDTNNeOO-44" target="-Hhe_IaTKdPIlDTNNeOO-11">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-50" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.444;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="-Hhe_IaTKdPIlDTNNeOO-44" target="-Hhe_IaTKdPIlDTNNeOO-11" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="90" y="410" as="sourcePoint" />
             <mxPoint x="140" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-52" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.user;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-52" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.user;" parent="1" vertex="1">
           <mxGeometry x="1240" y="60" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-53" value="&lt;div&gt;User Story 0&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-53" value="&lt;div&gt;User Story 0&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1258" y="60" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-58" value="&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Als Kunde wünsche ich mir eine Möglichkeit für die Startseite,&lt;br&gt;wo ich navigieren kann und eine Auswahl zwischen den 3 Funktionen:&lt;br&gt;- Registrieren&lt;br&gt;- Bücherliste ansehen&lt;br&gt;- Buch ausleihen" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-58" value="&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Als Kunde wünsche ich mir eine Möglichkeit für die Startseite,&lt;br&gt;wo ich navigieren kann und eine Auswahl zwischen den 3 Funktionen:&lt;br&gt;- Registrieren&lt;br&gt;- Bücherliste ansehen&lt;br&gt;- Buch ausleihen" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="1184" y="69" width="390" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-70" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-70" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1174" y="630" width="536" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-71" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.user;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-71" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.user;" parent="1" vertex="1">
           <mxGeometry x="1244" y="640" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-72" value="&lt;div&gt;User Story 3&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-72" value="&lt;div&gt;User Story 3&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1263" y="640" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-74" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-74" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1170" y="230" width="530" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-75" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.user;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-75" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.user;" parent="1" vertex="1">
           <mxGeometry x="1240" y="240" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-76" value="&lt;div&gt;User Story 1&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-76" value="&lt;div&gt;User Story 1&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1259" y="240" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-77" value="Als Kunde wünsche ich ein Registrierungsformular,&lt;br&gt;wo ich meine Daten eintragen und bestätigen kann." style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-77" value="Als Kunde wünsche ich ein Registrierungsformular,&lt;br&gt;wo ich meine Daten eintragen und bestätigen kann." style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="1184" y="288" width="290" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-78" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-78" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1170" y="435" width="530" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-79" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.user;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-79" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.user;" parent="1" vertex="1">
           <mxGeometry x="1240" y="445" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-80" value="&lt;div&gt;User Story 2&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-80" value="&lt;div&gt;User Story 2&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1259" y="445" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-81" value="Als Kunde möchte ich die Möglichkeit haben, das gesamte Buchsortiment zu sehen,&lt;br&gt;Bei jedem Buch sollte ich auch die wichtigsten Informationen zum Buch sehen können.&lt;br&gt;&lt;br&gt;&lt;br&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-81" value="Als Kunde möchte ich die Möglichkeit haben, das gesamte Buchsortiment zu sehen,&lt;br&gt;Bei jedem Buch sollte ich auch die wichtigsten Informationen zum Buch sehen können.&lt;br&gt;&lt;br&gt;&lt;br&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="1195" y="485" width="480" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-82" value="&lt;div&gt;Als Kunde möchte ich die Möglichkeit haben, ein Buch auszuleihen.&lt;/div&gt;&lt;div&gt;Mit einem Formular kann ich meine Ausleihe&lt;/div&gt;mit meinen Daten und dem Titel des Buches ausfüllen und bestätigen." style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="-Hhe_IaTKdPIlDTNNeOO-82" value="&lt;div&gt;Als Kunde möchte ich die Möglichkeit haben, ein Buch auszuleihen.&lt;/div&gt;&lt;div&gt;Mit einem Formular kann ich meine Ausleihe&lt;/div&gt;mit meinen Daten und dem Titel des Buches ausfüllen und bestätigen." style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="1195" y="685" width="390" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UxeK1BwtODX440jXkS57-1" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;✅&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1595" y="95" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UxeK1BwtODX440jXkS57-2" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;✅&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1595" y="268" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UxeK1BwtODX440jXkS57-3" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;✅&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1610" y="520" width="80" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
