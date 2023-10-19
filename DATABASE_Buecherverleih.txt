@@ -1,0 +1,409 @@
+DROP DATABASE IF EXISTS Buecherverleih;
+
+CREATE DATABASE Buecherverleih;
+
+USE Buecherverleih;
+
+CREATE TABLE buch (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    titel VARCHAR(100) NOT NULL
+    
+);
+
+CREATE TABLE kunde (
+    nummer CHAR(10) PRIMARY KEY,
+	name VARCHAR(200) NOT NULL,
+	vorname VARCHAR(200) NOT NULL,
+	guthaben DOUBLE NOT NULL	
+    
+  
+);
+
+CREATE TABLE ausleihe (
+
+    buch_id INT FOREIGN KEY,
+	kundennummer	CHAR(10) FOREIGN KEY,
+	FOREIGN KEY (kunde) REFERENCES kunde (nummer),
+	FOREIGN KEY (buch) REFERENCES buch (id)
+  
+);
+
+
+
+besser...
+
+
+DROP DATABASE IF EXISTS Buecherverleih;
+
+
+CREATE DATABASE Buecherverleih;
+
+
+USE Buecherverleih;
+
+
+
+-- Create the "buch" table
+CREATE TABLE buch (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    titel VARCHAR(100) NOT NULL,
+    autor VARCHAR(200) NOT NULL,
+    genre VARCHAR(50),
+    erscheinungsjahr INT,
+    isbn VARCHAR(13) UNIQUE
+);
+
+
+CREATE TABLE kunde (
+    nummer CHAR(10) PRIMARY KEY,
+    name VARCHAR(200) NOT NULL,
+    vorname VARCHAR(200) NOT NULL,
+    guthaben DOUBLE NOT NULL
+);
+
+
+CREATE TABLE ausleihe (
+    ausleihe_id INT PRIMARY KEY AUTO_INCREMENT,
+    buch_id INT NOT NULL,
+    kundennummer CHAR(10) NOT NULL,
+    FOREIGN KEY (buch_id) REFERENCES buch(id),
+    FOREIGN KEY (kundennummer) REFERENCES kunde(nummer)
+);
+
+CREATE TABLE verlag (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(200) NOT NULL,
+    sitz VARCHAR(100),
+    gruendungsjahr INT
+);
+
+-- Add a foreign key relationship between "buch" and "verlag"
+ALTER TABLE buch
+ADD COLUMN verlag_id INT,
+ADD FOREIGN KEY (verlag_id) REFERENCES verlag(id);
+
+
+
+ideas and tools to make your DB unique :) 
+
+https://www.edrawsoft.com/de/article/er-diagrams-for-library-management-system.html
+
+https://trello.com/b/hmjU2QtY/quick-database-diagrams-product-roadmap
+
+
+
+
+postgreSQL Syntax 
+
+
+
+DROP DATABASE IF EXISTS Buecherverleih;
+
+
+CREATE DATABASE Buecherverleih;
+
+
+USE Buecherverleih;
+
+
+CREATE TABLE verlag (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(200) NOT NULL,
+    sitz VARCHAR(100),
+    gruendungsjahr INTEGER
+);
+
+
+CREATE TABLE buch (
+    id SERIAL PRIMARY KEY,
+    titel VARCHAR(100) NOT NULL,
+    autor VARCHAR(200) NOT NULL,
+    genre VARCHAR(50),
+    erscheinungsjahr INT,
+	verlag_id SERIAL NOT NULL,
+    isbn VARCHAR(13) UNIQUE,
+	FOREIGN KEY (verlag_id) REFERENCES verlag(id)
+	
+
+);
+
+CREATE TABLE kunde (
+    nummer SERIAL PRIMARY KEY,
+    name VARCHAR(200) NOT NULL,
+    vorname VARCHAR(200) NOT NULL,
+    guthaben INTEGER NOT NULL
+);
+
+
+
+CREATE TABLE ausleihe (
+    ausleihe_id SERIAL PRIMARY KEY,
+    buch_id SERIAL NOT NULL,
+    kundennummer SERIAL NOT NULL,
+    FOREIGN KEY (buch_id) REFERENCES buch(id),
+    FOREIGN KEY (kundennummer) REFERENCES kunde(nummer)
+);
+
+
+
+
+-- Insert data into the "verlag" table (publisher information)
+INSERT INTO verlag (name, sitz, gruendungsjahr)
+VALUES
+    ('Publisher A', 'Location A', 2000),
+    ('Publisher B', 'Location B', 1995),
+    ('Publisher C', 'Location C', 2010);
+
+inserted 
+
+
+
+-- Insert data into the "verlag" table (publisher information)
+INSERT INTO verlag (name, sitz, gruendungsjahr)
+VALUES
+    ('Publisher A', 'Location A', 2000),
+    ('Publisher B', 'Location B', 1995),
+    ('Publisher C', 'Location C', 2010);
+
+
+
+
+
+
+-- Insert data into the "buch" table (book information)
+INSERT INTO buch (titel, autor, genre, erscheinungsjahr, verlag_id, isbn)
+VALUES
+    ('Atomic Habits', 'Dr. Carol S. Dweck', 'Self-Help', 2020, 1, '9781234567890'),
+    ('Mindset', 'Holly Stephen King', 'Psychology', 2015, 2, '9789876543210'),
+    ('Control your Mind', 'Eric Robertson', 'Self-Help', 2019, 3, '9785555555555'),
+    ('Das Mindset', 'Flamur Berischa', 'Psychology', 2021, 1, '9784444444444'),
+    ('Surrounded by idiots', 'Thomas Erikson', 'Psychology', 2014, 2, '9783333333333'),
+    ('The Power of Now', 'Eckhart Tolle', 'Spirituality', 1997, 3, '9782222222222'),
+    ('The Catcher in the Rye', 'J.D. Salinger', 'Fiction', 1951, 1, '9781111111111'),
+    ('To Kill a Mockingbird', 'Harper Lee', 'Fiction', 1960, 2, '9789999999999'),
+    ('The Great Gatsby', 'F. Scott Fitzgerald', 'Fiction', 1925, 3, '9788888888888');
+
+
+
+
+UPDATE verlag
+SET
+    name = CASE
+        WHEN name = 'Abenteuer Medien Verlag' THEN 'Updated Publisher 1'
+        WHEN name = 'ACABUS Verlag' THEN 'Updated Publisher 2'
+        WHEN name = 'Academia Verlag' THEN 'Updated Publisher 3'
+    END,
+    sitz = CASE
+        WHEN name = 'Abenteuer Medien Verlag' THEN 'Updated Location 1'
+        WHEN name = 'ACABUS Verlag' THEN 'Updated Location 2'
+        WHEN name = 'Academia Verlag' THEN 'Updated Location 3'
+    END,
+    gruendungsjahr = CASE
+        WHEN name = 'Abenteuer Medien Verlag' THEN 2020
+        WHEN name = 'ACABUS Verlag' THEN 2022
+        WHEN name = 'Academia Verlag' THEN 2023
+    END
+WHERE name IN ('Abenteuer Medien Verlag', 'ACABUS Verlag', 'Academia Verlag');
+
+
+
+- Insert the remaining publishers
+INSERT INTO verlag (name, sitz, gruendungsjahr)
+VALUES
+    ('Achterbahn', 'Kiel', 1991),
+    ('Adrian Dinser Verlag', 'Offenburg', 2020),
+    ('AIM-Verlagshaus', 'Frankfurt am Main', 2002),
+    ('Aisthesis Verlag', 'Bielefeld', 1985),
+    ('Akademische Arbeitsgemeinschaft Verlag', 'Mannheim', 1973),
+    ('Akademische Verlagsgesellschaft', 'Leipzig', 1906),
+    ('Verlag Karl Alber', 'Baden-Baden', 1910),
+    ('Alexander Verlag', 'Berlin', 1983),
+    ('Alibri Verlag', 'Aschaffenburg', 1994),
+    ('Alpinger Verlag', 'Dresden', 2021),
+    ('ALTOP Verlag', 'München', 1984),
+    ('Altraverse', 'Hamburg', 2017),
+    ('Amrûn Verlag', 'Traunstein', 2013),
+    ('Schulbuchverlag Anadolu', 'Hückelhoven', 1977),
+    ('Anabas-Verlag', 'Frankfurt am Main', 1966),
+    ('Andere Zeiten', 'Hamburg', 1998),
+    ('Anno Verlag', 'Ahlen', 2010),
+    ('Verlag Antaios', 'Schnellroda', 2000),
+    ('Apprimus Wissenschaftsverlag', 'Aachen', 2008),
+    ('Arbeitsgemeinschaft für zeitgemäßes Bauen e. V.', 'Kiel', 1946),
+    ('Argon Verlag', 'Berlin', 1952),
+    ('Argument Verlag', 'Hamburg', 1959),
+    ('Arndt-Verlag e.K.', 'Bretten', 1988),
+    ('Arovell Verlag', 'Gosau', 1991),
+    ('ArsEdition', 'München', 1896),
+    ('Das Arsenal', 'Berlin', 1977),
+    ('Aschendorff Verlag', 'Münster', 1720),
+    ('aLiVe, Assoziation Linker Verlage', 'Aschaffenburg', 1994),
+    ('ATHENA-Verlag', 'Oberhausen', 1996),
+    ('Der Audio Verlag (DAV)', 'Berlin', 1999),
+    ('Audio Verlag München (avm)', 'München', 2018),
+    ('Carl-Auer-Verlag', 'Heidelberg', 1989),
+    ('Aufbau Verlagsgruppe', 'Berlin', 1945),
+    ('Autorenhaus Verlag', 'Berlin', 1996),
+    ('Aviva Verlag', 'Berlin', 1997),
+    ('Avocado Verlag', 'Berlin', 2022),
+    ('Axel Dielmann-Verlag', 'Frankfurt am Main', 1993);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Abenteuer Medien Verlag 	Hamburg 	1993 	
+ACABUS Verlag 	Hamburg 	2008 	
+Academia Verlag 	Baden-Baden 	1988 	
+Achterbahn 	Kiel 	1991 	2003 
+Adrian Dinser Verlag 	Offenburg 	2020 		
+AIM-Verlagshaus 	Frankfurt am Main 	2002 		
+Aisthesis Verlag 	Bielefeld 	1985 		
+Akademische Arbeitsgemeinschaft Verlag 	Mannheim 	1973 	
+Akademische Verlagsgesellschaft 	Leipzig 	1906 	
+Verlag Karl Alber 	Baden-Baden 	1910 
+Alexander Verlag 	Berlin 	1983 	
+
+Alibri Verlag 	Aschaffenburg 	1994 	
+
+Alpinger Verlag 	Dresden 	2021 	
+
+ALTOP Verlag 	München 	1984 		
+Altraverse 	Hamburg 	2017 		
+Amrûn Verlag 	Traunstein 	2013 		
+Schulbuchverlag Anadolu 	Hückelhoven 	1977 		
+Anabas-Verlag 	Frankfurt am Main 	1966 		
+Andere Zeiten 	Hamburg 	1998 	
+ Ratgeber
+Anno Verlag 	Ahlen 	2010 		
+Verlag Antaios 	Schnellroda 	2000 		
+
+
+Apprimus Wissenschaftsverlag 	Aachen 	2008 		
+
+Arbeitsgemeinschaft für zeitgemäßes Bauen e. V. 	Kiel 	1946 	
+
+
+Argon Verlag 	Berlin 	1952 	
+Argument Verlag 	Hamburg 	1959 		
+Arndt-Verlag e.K. 	Bretten 	1988 		
+
+
+Arovell Verlag 	Gosau 	1991 		
+ArsEdition 	München 	1896 	
+Das Arsenal 	Berlin 	1977 		
+Aschendorff Verlag 	Münster 	1720 		
+aLiVe, Assoziation Linker Verlage 	Aschaffenburg 	1994 		
+
+ATHENA-Verlag 	Oberhausen 	1996 		
+Der Audio Verlag (DAV) 	Berlin 	1999 	
+Audio Verlag München (avm) 	München 	2018 	
+Carl-Auer-Verlag 	Heidelberg 	1989 		
+Aufbau Verlagsgruppe 	Berlin 	1945 	
+
+Autorenhaus Verlag 	Berlin 	1996 		
+Aviva Verlag 	Berlin 	1997 		
+Avocado Verlag 	Berlin 	2022 		
+Axel Dielmann-Verlag 	Frankfurt am Main 	1993 	 
+
+
+
+
+-- Update the "verlag_id" for specific records in the "buch" table
+-- Use a CASE statement to set the new "verlag_id" based on a condition (e.g., book title)
+UPDATE buch
+SET verlag_id = CASE
+    WHEN id = 1 THEN 34 
+    WHEN id = 2 THEN 15        
+    WHEN id = 3 THEN 6 
+    WHEN id = 4 THEN 31 
+    WHEN id = 5 THEN 10        
+    WHEN id = 6 THEN 20
+    WHEN id = 7 THEN 32 
+    WHEN id = 8 THEN 14        
+    WHEN id = 9 THEN 16 
+    -- Add more cases as needed
+    ELSE verlag_id  
+END
+WHERE id IN (1,2,3,4,5,6,7,8,9);
+
+
+
+
+
+-- Insert data into the "buch" table (30 book titles)
+INSERT INTO buch (titel, autor, genre, erscheinungsjahr, verlag_id, isbn)
+VALUES
+    ('Ilias', 'Homer', 'Self-Help', 1200, 10, '9781234567894'),
+    ('Odyssee', 'Homer', 'Psychology', 1200, 20, '9789876543211'),
+    ('Die Göttliche Komödie', 'Dante Alighieri', 'Self-Help', 1320, 32, '9785555551555'),
+    ('Das Leben ein Traum', 'Pedro Calderón de la Barca', 'Drama', 1634, 4, '9781131111111'),
+    ('Don Quijote', 'Miguel de Cervantes', 'Fiction', 1605, 5, '9782222223222'),
+    ('Der Abenteuerliche Simplicissimus Teutsch', 'Hans J. C. von Grimmelshausen', 'Fiction', 1668, 6, '9783333343333'),
+    ('Paradise Lost', 'John Milton', 'Epic Poetry', 1667, 7, '9784444444244'),
+    ('Utopia', 'Thomas Morus', 'Philosophy', 1516, 8, '9785556555555'),
+    ('Gargantua und Pantagruel', 'François Rabelais', 'Satire', 1532, 9, '9785666666666'),
+    ('Romeo und Julia', 'William Shakespeare', 'Tragedy', 1597, 10, '9787777757777'),
+    ('Ein Sommernachtstraum', 'William Shakespeare', 'Comedy', 1595, 11, '9788588888888'),
+    ('Der Kaufmann von Venedig', 'William Shakespeare', 'Comedy', 1596, 12, '9759999999999'),
+    ('Tom Jones: Die Geschichte eines Findelkindes', 'Henry Fielding', 'Novel', 1749, 13, '9781050101010'),
+    ('Iphigenie auf Tauris', 'Johann Wolfgang von Goethe', 'Drama', 1787, 14, '9782020502020'),
+    ('Torquato Tasso', 'Johann Wolfgang von Goethe', 'Drama', 1790, 15, '9783030303530'),
+    ('Wilhelm Meisters Lehrjahre', 'Johann Wolfgang von Goethe', 'Novel', 1795, 16, '9784050404040'),
+    ('Nathan der Weise', 'Gotthold Ephraim Lessing', 'Drama', 1779, 17, '9785050505650'),
+    ('Siebenkäs', 'Jean Paul', 'Novel', 1796, 18, '9786060606060'),
+    ('Die Räuber', 'Friedrich Schiller', 'Drama', 1781, 19, '9787070707070'),
+    ('Wallenstein', 'Friedrich Schiller', 'Drama', 1799, 20, '9788080808080'),
+    ('Tristram Shandy', 'Laurence Sterne', 'Novel', 1759, 21, '9789090909090'),
+    ('Gullivers Reisen', 'Jonathan Swift', 'Satire', 1726, 22, '9781010101011'),
+    ('Candide oder Der Optimismus', 'Voltaire', 'Satire', 1759, 23, '9782020202021'),
+    ('Little Women', 'Louisa Alcott', 'Novel', 1868, 24, '9783030303031'),
+    ('Emma', 'Jane Austen', 'Novel', 1815, 25, '9784040404041'),
+    ('Verstand und Gefühl', 'Jane Austen', 'Novel', 1811, 26, '9785050505051'),
+    ('Mansfield Park', 'Jane Austen', 'Novel', 1814, 27, '9786060606061'),
+    ('Das Dekameron', 'Giovanni Boccaccio', 'Fiction', 1353, 38, '9788883888888'),
+    ('Leonce und Lena', 'Georg Büchner', 'Play', 1836, 28, '9787070707071'),
+    ('Alice im Wunderland', 'Lewis Carroll', 'Fantasy', 1865, 29, '9788080808081'),
+    ('David Copperfield', 'Charles Dickens', 'Novel', 1849, 30, '9789090909091'),
+    ('Große Erwartungen', 'Charles Dickens', 'Novel', 1860, 31, '9781010101012'),
+    ('Eine Geschichte aus zwei Städten', 'Charles Dickens', 'Novel', 1859, 32, '9782020202022'),
+    ('Der Spieler', 'Fjodor Dostojewski', 'Novel', 1866, 33, '9783030303032');
+
+
+
+DROP TABLE ausleihe;
+
+
+CREATE TABLE ausleihe (
+    ausleihe_id SERIAL PRIMARY KEY,
+    buch_id INT NOT NULL,
+    kunde_nummer INT NOT NULL,
+    datum DATE,
+    FOREIGN KEY (buch_id) REFERENCES buch(id),
+    FOREIGN KEY (kunde_nummer) REFERENCES kunde(nummer)
+);
+
+
+
+
+
+
+
+
+
